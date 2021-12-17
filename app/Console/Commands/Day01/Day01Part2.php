@@ -1,17 +1,17 @@
 <?php
 
-namespace App\Console\Commands\Day1;
+namespace App\Console\Commands\Day01;
 
 use Illuminate\Console\Command;
 
-class Day1Part1 extends Command
+class Day01Part2 extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'day1:part1';
+    protected $signature = 'day01:part2';
 
     /**
      * The console command description.
@@ -37,9 +37,9 @@ class Day1Part1 extends Command
      */
     public function handle()
     {
-        $path = storage_path('app/inputs/day1.txt');
+        $path = storage_path('app/inputs/day01.txt');
         $input = file($path);
 
-        dd($input);
+        return Command::SUCCESS;
     }
 }
